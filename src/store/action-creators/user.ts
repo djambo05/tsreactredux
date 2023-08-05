@@ -6,7 +6,7 @@ export const fetchUsers = () => {
   return async (dispatch: Dispatch<UserAction>) => {
     try {
       dispatch({ type: UserActionTypes.FETCH_USERS });
-      const response = await axios.get("https://jsonplaceh2older.org/users");
+      const response = await axios.get("https://jsonplaceholder.org/users");
       setTimeout(() => {
         dispatch({
           type: UserActionTypes.FETCH_USERS_SUCCESS,
