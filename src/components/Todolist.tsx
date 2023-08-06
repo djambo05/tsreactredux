@@ -1,7 +1,6 @@
-import React, { FC, useEffect } from "react";
+import { FC, useEffect } from "react";
 import { useTypeSelector } from "../hooks/useTypeSelector";
 import { useActions } from "../hooks/useActions";
-import { updateSourceFile } from "typescript";
 
 const TodoList: FC = () => {
   const { todos, loading, error, limit, page } = useTypeSelector(
